@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Handson3</title>
+</head>
+
+<body>
+
+    <h1>Iteration Statements</h1>
+
+    <h2>1.Find the number of digits.</h2> 
+
+    A. const Find_Digits = (N) => 
+    {
+    count = 0;
+    while (N>0){
+      N=parseInt(N/10);
+      count++;
+    }
+    return count;
+    };
+
+
+
+    <h2>2.Find the Fives.</h2>
+
+    A. const Find_Five = (N) => 
+    {
+      str = N.toString();
+      count = 0;
+      for (i=0;i< str.length;i++){
+        if (str[i] = = 5){
+          count++;
+        }
+      }
+      return count;
+    };
+
+
+
+     <h2>3.Find Sum.</h2>
+
+    A. const findSum = (n) => {
+        sum=0;
+        for (i=1;i < =n;i++){
+          if (i%2===0){
+            sum=sum+i;
+          }
+        }
+        return sum;
+      };
+
+
+
+    <h2>4.Find the sum of the digits of a given number.</h2>
+
+    A. const Number_Sum = (N) => {
+        sum = 0;
+        str = N.toString();
+        for (i = 0; i < str.length; i++) {
+          sum = sum + parseInt(str[i]);
+        }
+        return (sum);
+      };
